@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, num, even_sum = 0, odd_sum = 0;
+    
+    cout << "Enter the number of integers: ";
+    cin >> n;
+    
+    for (int i = 0; i < n; i++) {
+        cout << "Enter an integer: ";
+        cin >> num;
+        
+        if (num % 2 == 0) {
+            even_sum += num;
+        } else {
+            odd_sum += num;
+        }
+    }
+    
+    int difference = odd_sum - even_sum;
+    cout << "Difference between odd sum and even sum: " << difference << endl;
+    
+    return 0;
+}
